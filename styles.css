@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  align-items: center;
+  background: var(--pale-blue);
+  display: flex;
+  flex-direction: column;
+  font-family: "Red Hat Display", sans-serif;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+p {
+  color: var(--desaturated-blue);
+  line-height: 1.6rem;
+  margin-top: 1rem;
+}
+
+button {
+  background: var(--bright-blue);
+  border: none;
+  border-radius: 0.7rem;
+  box-shadow: 0 1.25rem 1.25rem hsla(245, 75%, 52%, 0.2);
+  color: white;
+  font-size: 1rem;
+  font-weight: 900;
+  margin-top: 2rem;
+  padding: 1rem;
+  transition: all 200ms ease-in-out;
+  width: 100%;
+}
+
+button:hover {
+  background: #766cf1;
+  cursor: pointer;
+}
+
+.background {
+  position: absolute;
+  min-width: 100%;
+  top: 0;
+  z-index: -100;
+}
+
+.card {
+  background: white;
+  border-radius: 1.2rem;
+  box-shadow: 0 2.5rem 2.5rem hsla(228, 87%, 40%, 0.15);
+  height: 697px;
+  overflow: hidden;
+  text-align: center;
+  width: 450px;
+}
+
+.main-image {
+  max-width: 100%;
+}
+
+.card-content {
+  padding: 2.8rem 3rem 3rem 3rem;
+}
+
+.subscription-card {
+  align-items: center;
+  background: var(--very-pale-blue);
+  border-radius: 0.7rem;
+  display: flex;
+  margin-top: 1.25rem;
+  padding: 1.5rem;
+}
+
+.annual-plan {
+  font-weight: 900;
+  line-height: 1.5rem;
+  margin-left: 1.25rem;
+}
+
+.price {
+  color: var(--desaturated-blue);
+  font-weight: 500;
+}
+
+.change-link {
+  color: var(--bright-blue);
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-left: 5.5rem;
+  transition: all 200ms ease-in-out;
+}
+
+.change-link:hover {
+  color: #766cf1;
+  cursor: pointer;
+}
+
+.cancel {
+  color: var(--desaturated-blue);
+  font-weight: 900;
+  margin-top: 2rem;
+  transition: all 200ms ease-in-out;
+}
+
+.cancel:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
